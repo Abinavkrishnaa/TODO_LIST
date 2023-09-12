@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+
+import "./App.css";
+import Main from "./components/main";
+import User from "./components/User";
+import AddNewTodo from "./components/AddNewTodo";
+import Calender from "./components/Calendar";
+import Projects from "./components/Projects";
+import Todos from "./components/Todos";
+import EditTodo from "./components/EditTodo";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Sidebar>
+        <User />
+        <AddNewTodo />
+        <Calender />
+        <Projects />
+      </Sidebar>
+      <Main>
+        <Todos />
+        <EditTodo />
+
+      </Main>
+      
     </div>
   );
 }
