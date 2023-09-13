@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,500;1,200;1,300;1,400&family=Ubuntu:ital,wght@1,300;1,400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.App{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.Sidebar{
+    background-color: rgb(11, 2, 2);
+    color: aliceblue;
+    width: 100px;
+    min-width: 210px;
+    height: 100%;
+}
+
+.Main{
+    width: 100%;
+    color: aliceblue;
+    background-image: url('./images/todobackground.jpg');
+    background-size: cover;
+}
+.User{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    border: 1px solid rgb(54, 33, 33);
+}
+.User .logo img{
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid rgb(163, 165, 84);
+}
+.User .info p{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.User .info a{
+    text-decoration: none  ;
+    display: flex;
+    justify-content: flex-end;
+}
+.Modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vw;
+    background: transparent;
+}
+.Modal .container{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-25%);
+    background: white;
+    color: black;
+}
+.AddNewTodo{
+    border-bottom: 1px solid rgb(106, 90, 90);
+
+}
+.AddNewTodo .btn {
+    padding: 16px;
+    width: 100%;
+    height: 90px;
+}
+.AddNewTodo .btn button{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-size: 1rem;
+    background-color: rgb(17, 27, 218);
+    color: aliceblue;
+    font-weight: bold;
+    cursor: pointer;
+}
+.AddNewTodo .btn button:hover{
+    filter: brightness(2.1);
+    transition: all 300ms ease;
+}

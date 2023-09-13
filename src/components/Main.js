@@ -1,9 +1,12 @@
 import React from 'react'
+import Todos from './Todos'
+import EditTodo from './EditTodo'
 
-function Main( {Children} ) {
+function Main(  ) {
   return (
-    <div className='main'>
-        {Children}    
+    <div className='Main'>
+        <Todos />
+        <EditTodo />  
     </div>
   )
 }
